@@ -1,0 +1,30 @@
+{
+  "name": "ear",
+  "version": "0.1.0",
+  "description": "Map DOM events to DOM elements",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/browserify test/index.js > test/bundle.js",
+    "watch": "node_modules/.bin/watchify test/index.js -o test/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottcorgan/ear.git"
+  },
+  "keywords": [
+    "DOM",
+    "events",
+    "listener",
+    "click"
+  ],
+  "author": "Scott Corgan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottcorgan/ear/issues"
+  },
+  "devDependencies": {
+    "tape": "~2.3.2",
+    "browserify": "~3.13.0",
+    "watchify": "~0.4.1"
+  }
+}
