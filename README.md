@@ -1,6 +1,6 @@
 # ear
  
-Map DOM events to DOM elements. For use with [Browserify](http://browserify.org/);
+Map DOM events to DOM elements. For use with [Browserify](http://browserify.org/).
  
 ## Install
  
@@ -28,7 +28,7 @@ ear({
 });
 ```
  
-Note: **ear** uses querySelectorAll under the hood.
+Note: **ear** uses `querySelectorAll` under the hood.
 
 ## Options
 
