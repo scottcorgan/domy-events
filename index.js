@@ -3,7 +3,7 @@
   var windowLoaded = false;
 
   var ear = function (events, options) {
-    if (windowLoaded) init();
+    if (windowLoaded || document.readyState === "complete") init();
     else window.onload = init;
     
     function init() {
