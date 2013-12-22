@@ -7,8 +7,10 @@
     else window.onload = init;
     
     function init() {
-      windowLoaded = true;
-      Object.keys(events).forEach(ear.mapEvents(events, options));
+      setTimeout(function () {
+        windowLoaded = true;
+        Object.keys(events).forEach(ear.mapEvents(events, options));
+      }, 0);
     }
     
     return ear;
@@ -18,25 +20,24 @@
     return function (key) {
       if (!EVENT_SPLITTER.test(key)) return;
       
-      var i = 0;
       var eventList = key.split(EVENT_SPLITTER);
       var eventName = eventList.shift();
       var action = events[key];
       var parent = ear.parentElement(options.parent);
       
+      parent.appendChild(document.createTextNode('asdf'));
+      
       if (!parent) return;
       
       var domElements = parent.querySelectorAll(eventList.join(' '));
       
-      for(i; i < domElements.length; i += 1) {
-        var el = domElements[i];
-        if (!el) next;
-        
+      [].forEach.call(domElements, function (el) {
         el.addEventListener(eventName, function (e) {
           var context = options.bind || this;
           action.call(context, e);
         });
-      }
+      });
+      
     };
   };
 
