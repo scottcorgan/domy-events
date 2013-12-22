@@ -25,8 +25,6 @@
       var action = events[key];
       var parent = ear.parentElement(options.parent);
       
-      parent.appendChild(document.createTextNode('asdf'));
-      
       if (!parent) return;
       
       var domElements = parent.querySelectorAll(eventList.join(' '));
