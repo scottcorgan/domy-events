@@ -13,12 +13,6 @@ npm install dove-events --save
 ```js
 var events = require('dove-events');
 
-events({
-  'click .some-css-selector': handlers.method1
-  'click. #someId': 'method2',
-  'submit form': handlers.formHandler
-}, eventsOptions);
-
 var handlers = {
   method1: function (e) {
     e.preventDefault();
@@ -40,6 +34,12 @@ var eventsOptions = {
   delegate: true // optional
 };
 
+// Now, handle events
+events({
+  'click .some-css-selector': handlers.method1
+  'click. #someId': 'method2',
+  'submit form': handlers.formHandler
+}, eventsOptions);
 ```
  
 If you bind the events to a context/object, you can provide a string ans the event listener method instead of a reference to the method.
