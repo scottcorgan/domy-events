@@ -1,7 +1,7 @@
 {
-  "name": "ear",
-  "version": "0.1.3",
-  "description": "Map DOM events to DOM elements",
+  "name": "dove-events",
+  "version": "0.2.0",
+  "description": "Map DOM events to DOM elements (optionally with delegation)",
   "main": "index.js",
   "scripts": {
     "build": "node_modules/.bin/browserify test/index.js > test/bundle.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/scottcorgan/ear.git"
+    "url": "https://github.com/scottcorgan/dove-events.git"
   },
   "keywords": [
     "DOM",
@@ -20,7 +20,7 @@
   "author": "Scott Corgan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scottcorgan/ear/issues"
+    "url": "https://github.com/scottcorgan/dove-events/issues"
   },
   "devDependencies": {
     "tape": "~2.3.2",
