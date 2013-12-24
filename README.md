@@ -13,21 +13,26 @@ npm install dove-events --save
 ```js
 var events = require('dove-events');
 
-var obj = {
-  method: function (e) {
+var handlers = {
+  method1: function (e) {
     e.preventDefault();
     console.log('in this method');    
+  },
+  
+  method2: function (e) {
+  
   }
 };
 
 var eventsOptions = {
-  bind: obj, // optional
+  bind: handlers, // optional
   parent: '.parent', // optional (can use a DOM object as well)
   delegate: true // optional
 };
 
 events({
-  'click .some-css-selector': obj.method
+  'click .some-css-selector': handlers.method1
+  'click. #someId': 'method2'
 }, eventsOptions);
 ```
  
