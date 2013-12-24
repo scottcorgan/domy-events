@@ -42,8 +42,6 @@ events({
 }, eventsOptions);
 ```
  
-If you bind the events to a context/object, you can provide a string ans the event listener method instead of a reference to the method.
- 
 Note: **dove-events** uses `querySelectorAll` under the hood.
 
 ## Options
