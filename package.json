@@ -1,6 +1,6 @@
 {
   "name": "dove-events",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Map DOM events to DOM elements (optionally with delegation)",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,8 @@
     "tape": "~2.3.2",
     "browserify": "~3.13.0",
     "watchify": "~0.4.1"
+  },
+  "dependencies": {
+    "dove": "~0.1.0"
   }
 }

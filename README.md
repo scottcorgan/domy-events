@@ -1,6 +1,8 @@
 # dove-events
  
 Map DOM events to DOM elements. For use with [Browserify](http://browserify.org/).
+
+Part of the [dove module collection](https://github.com/scottcorgan/dove).
  
 ## Install
  
