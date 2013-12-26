@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node_modules/.bin/browserify test/index.js > test/bundle.js",
     "watch": "node_modules/.bin/watchify test/index.js -o test/bundle.js",
-    "test": "node_modules/.bin/testling"
+    "test": "node_modules/.bin/testling | node_modules/.bin/faucet"
   },
   "repository": {
     "type": "git",
@@ -30,7 +30,8 @@
     "testling": "~1.5.6",
     "domify": "~1.1.1",
     "dom-events": "~0.1.1",
-    "synthetic-dom-events": "~0.1.1"
+    "synthetic-dom-events": "~0.1.1",
+    "faucet": "0.0.0"
   },
   "dependencies": {
     "domy": "~0.2.0"
