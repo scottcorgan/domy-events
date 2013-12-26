@@ -1,6 +1,6 @@
 {
   "name": "domy-events",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Map DOM events to DOM elements (optionally with delegation)",
   "main": "index.js",
   "scripts": {
