@@ -1,19 +1,19 @@
-# dove-events
+# domy-events
  
 Map DOM events to DOM elements. For use with [Browserify](http://browserify.org/).
 
-Part of the [Dove module collection](https://github.com/scottcorgan/dove).
+Part of the [Domy module collection](https://github.com/scottcorgan/domy).
  
 ## Install
  
 ```
-npm install dove-events --save
+npm install domy-events --save
 ```
  
 ## Usage
  
 ```js
-var events = require('dove-events');
+var events = require('domy-events');
 
 var handlers = {
   method1: function (e) {
@@ -44,7 +44,7 @@ events({
 }, eventsOptions);
 ```
  
-Note: **dove-events** uses `querySelectorAll` under the hood.
+Note: **domy-events** uses `querySelectorAll` under the hood.
 
 ## Options
 
