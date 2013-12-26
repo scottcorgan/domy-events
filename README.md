@@ -54,13 +54,6 @@ Note: **domy-events** uses `querySelectorAll` under the hood.
 * `parent` - the parent DOM element for all css selections. Defaults to `document`.
 * `delegate` - delegate all events to the parent
  
-## Browser support
-
-* Chrome - all
-* Firefox - all
-* Safari - all
-* IE - 9+
-
 ## Run Tests
 
 Requires [Phantomjs](phantomjs.org/download.html) is installed
