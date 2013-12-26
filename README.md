@@ -3,6 +3,8 @@
 Map DOM events to DOM elements. For use with [Browserify](http://browserify.org/).
 
 Part of the [Domy module collection](https://github.com/scottcorgan/domy).
+
+[![browser support](https://ci.testling.com/scottcorgan/domy-events.png)](https://ci.testling.com/scottcorgan/domy-events)
  
 ## Install
  
@@ -58,3 +60,12 @@ Note: **domy-events** uses `querySelectorAll` under the hood.
 * Firefox - all
 * Safari - all
 * IE - 9+
+
+## Run Tests
+
+Requires [Phantomjs](phantomjs.org/download.html) is installed
+
+```
+npm install
+npm test
+```

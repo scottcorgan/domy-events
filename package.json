@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node_modules/.bin/browserify test/index.js > test/bundle.js",
-    "watch": "node_modules/.bin/watchify test/index.js -o test/bundle.js"
+    "watch": "node_modules/.bin/watchify test/index.js -o test/bundle.js",
+    "test": "node_modules/.bin/testling"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,24 @@
   "devDependencies": {
     "tape": "~2.3.2",
     "browserify": "~3.13.0",
-    "watchify": "~0.4.1"
+    "watchify": "~0.4.1",
+    "testling": "~1.5.6",
+    "domify": "~1.1.1",
+    "dom-events": "~0.1.1",
+    "synthetic-dom-events": "~0.1.1"
   },
   "dependencies": {
     "domy": "~0.2.0"
+  },
+  "testling": {
+    "files": "test/index.js",
+    "browsers": [
+      "firefox/16..latest",
+      "chrome/22..latest",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
   }
 }
